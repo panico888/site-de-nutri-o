@@ -1,7 +1,4 @@
-document.getElementById("contato").addEventListener("click", function() {
-  var formContainer = document.getElementById("form-container");
-  formContainer.style.display = (formContainer.style.display === "block") ? "none" : "block";
-});
+
 
 document.getElementById("contact-form").addEventListener("submit", function(event) {
   event.preventDefault(); // Impede o envio real para fins de demonstração
