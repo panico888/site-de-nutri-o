@@ -1,4 +1,3 @@
-
 document.getElementById("contato").addEventListener("click", function() {
   var formContainer = document.getElementById("form-container");
   formContainer.style.display = (formContainer.style.display === "block") ? "none" : "block";
