@@ -9,71 +9,67 @@
 </head>
 <body>
   <header class="hero">
-    <h1>NutriVida</h1>
-    <p>Saúde e bem-estar de forma natural</p>
-    <div class="botao-container">
-      <!-- Ao clicar, rola até o formulário -->
-      <button id="contato" onclick="document.getElementById('formulario').scrollIntoView({ behavior: 'smooth' })">Fale Conosco</button>
-    </div>
-  </header>
+  <h1>NutriVida</h1>
+  <p>Saúde e bem-estar de forma natural</p>
+  <div class="botao-container">
+    <button id="contato">Fale Conosco</button>
+  </div>
+</header>
 
   <main>
-    <!-- FORMULÁRIO COM ID PARA ROLAR COM O BOTÃO -->
-    <form id="formulario" action="https://formsubmit.co/benhurcasemirodias@gmail.com" method="POST" class="form-container">
-      <h2>Fale Conosco</h2>
+    <main>
+  <div id="form-container" class="form-container">
+    <h2>Entre em Contato</h2>
+    <form id="contact-form">
+      <label for="name">Nome</label>
+      <input type="text" id="name" name="name" required>
 
-      <label for="nome">Nome</label>
-      <input type="text" name="nome" id="nome" required>
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" required>
 
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" required>
-
-      <label for="mensagem">Mensagem</label>
-      <textarea name="mensagem" id="mensagem" rows="5" required></textarea>
-
-      <!-- Proteção contra spam -->
-      <input type="hidden" name="_captcha" value="false">
-
-      <!-- Redireciona para uma página de obrigado -->
-      <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+      <label for="message">Mensagem</label>
+      <textarea id="message" name="message" required></textarea>
 
       <button type="submit">Enviar</button>
     </form>
+  </div>
+</main>
+
   </main>
-
   <section class="servicos">
-    <h2>Nossos Serviços</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Consulta Nutricional</h3>
-        <p>Atendimento individualizado com plano alimentar personalizado.</p>
-      </div>
-      <div class="card">
-        <h3>Reeducação Alimentar</h3>
-        <p>Acompanhamento para mudanças de hábitos e melhoria da saúde.</p>
-      </div>
-      <div class="card">
-        <h3>Emagrecimento Saudável</h3>
-        <p>Perda de peso com equilíbrio, sem dietas restritivas.</p>
-      </div>
+  <h2>Nossos Serviços</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Consulta Nutricional</h3>
+      <p>Atendimento individualizado com plano alimentar personalizado.</p>
     </div>
-  </section>
+    <div class="card">
+      <h3>Reeducação Alimentar</h3>
+      <p>Acompanhamento para mudanças de hábitos e melhoria da saúde.</p>
+    </div>
+    <div class="card">
+      <h3>Emagrecimento Saudável</h3>
+      <p>Perda de peso com equilíbrio, sem dietas restritivas.</p>
+    </div>
+  </div>
+</section>
+<footer class="rodape">
+  <div class="footer-content">
+    <div class="contact-info">
+      <p><strong>NutriVida</strong> - Clínica de Nutrição</p>
+      <p>Rua Exemplo, 123 - Centro de Bangu, RJ</p>
+      <p><strong>Telefone:</strong> (021) 1234-5678</p>
+      <p><strong>Email:</strong> analuizanutri@gmail.com</p>
+    </div>
+    <div class="social-links">
+      <a href="" target="_blank">grupo whatsapp</a>
+      <a href="https://www.instagram.com/analuizanutrii/" target="_blank">Instagram</a>
+      <a href="https://www.instagram.com/analuizanutrii/" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+</footer>
 
-  <footer class="rodape">
-    <div class="footer-content">
-      <div class="contact-info">
-        <p><strong>NutriVida</strong> - Clínica de Nutrição</p>
-        <p>Rua Exemplo, 123 - Centro de Bangu, RJ</p>
-        <p><strong>Telefone:</strong> (021) 1234-5678</p>
-        <p><strong>Email:</strong> analuizanutri@gmail.com</p>
-      </div>
-      <div class="social-links">
-        <a href="#" target="_blank">Grupo WhatsApp</a>
-        <a href="https://www.instagram.com/analuizanutrii/" target="_blank">Instagram</a>
-        <a href="https://www.instagram.com/analuizanutrii/" target="_blank">LinkedIn</a>
-      </div>
-    </div>
-  </footer>
+
 
   <script src="script.js"></script>
 </body>
