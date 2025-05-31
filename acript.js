@@ -1,11 +1,15 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const contatoBtn = document.getElementById("contato");
+  const formContainer = document.getElementById("form-container");
+  const form = document.getElementById("contact-form");
 
+  contatoBtn.addEventListener("click", function () {
+    formContainer.classList.toggle("show");
+  });
 
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-  event.preventDefault(); // Impede o envio real para fins de demonstração
-  alert("Mensagem enviada com sucesso!");
-  document.getElementById("form-container").style.display = "none";
-}); 
-document.getElementById("contato").addEventListener("click", function() {
-  var formContainer = document.getElementById("form-container");
-  formContainer.classList.toggle("show"); // Alterna a animação de entrada
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    alert("Mensagem enviada com sucesso!");
+    formContainer.classList.remove("show");
+  });
 });
